@@ -8,24 +8,24 @@ mathjax: false
   <div class="hero-text">
     <h1>Explore the Depths of Theoretical Computer Science</h1>
     <p>A curated collection of notes and documentation on the fundamental concepts of computation.</p>
-    <a href="/subjects/" class="cta-button">Start Learning</a>
+    <a href="{{ '/subjects/' | url }}" class="cta-button">Start Learning</a>
   </div>
 </div>
 
 <div class="featured-areas">
   <h2>Dive Deeper into Core Concepts</h2>
   <div class="featured-grid">
-    <a href="/subjects/theory-of-computation/" class="featured-item">
+    <a href="{{ '/subjects/theory-of-computation/' | url }}" class="featured-item">
       <h3>Theory of Computation</h3>
       <p>Unravel the fundamental limits and power of algorithms.</p>
       <span class="arrow">→</span>
     </a>
-    <a href="/subjects/computational-complexity/" class="featured-item">
+    <a href="{{ '/subjects/computational-complexity/' | url }}" class="featured-item">
       <h3>Computational Complexity</h3>
       <p>Explore the inherent difficulty of solving computational problems.</p>
       <span class="arrow">→</span>
     </a>
-    <a href="/subjects/algorithm/" class="featured-item">
+    <a href="{{ '/subjects/algorithm/' | url }}" class="featured-item">
       <h3>Algorithms</h3>
       <p>Master the art and science of problem-solving procedures.</p>
       <span class="arrow">→</span>
@@ -36,7 +36,7 @@ mathjax: false
 <div class="author-section">
   <div class="author-card">
     <div class="author-photo">
-      <img src="/assets/images/pinkuprofile.jpeg" alt="Pinku Kumar Agrawal">
+      <img src="{{ '/assets/images/pinkuprofile.jpeg' | url }}" alt="Pinku Kumar Agrawal">
     </div>
     <div class="author-bio">
       <h3>Pinku Kumar Agrawal</h3>
@@ -54,7 +54,7 @@ mathjax: false
     <div class="recommendations-carousel">
         <div class="recommendation-card">
             <div class="reviewer-info">
-                <img src="/assets/images/reviews-profile/rp1.jpeg" alt="Reviewer 1" class="reviewer-image">
+                <img src="{{ '/assets/images/reviews-profile/rp1.jpeg' | url }}" alt="Reviewer 1" class="reviewer-image">
                 <p class="reviewer-name">Alex P.</p>
             </div>
             <div class="review-content">
@@ -63,7 +63,7 @@ mathjax: false
         </div>
         <div class="recommendation-card">
             <div class="reviewer-info">
-                <img src="/assets/images/reviews-profile/rp2.jpeg" alt="Reviewer 2" class="reviewer-image">
+                <img src="{{ '/assets/images/reviews-profile/rp2.jpeg' | url }}" alt="Reviewer 2" class="reviewer-image">
                 <p class="reviewer-name">Amie Chen</p>
             </div>
             <div class="review-content">
@@ -72,7 +72,7 @@ mathjax: false
         </div>
         <div class="recommendation-card">
             <div class="reviewer-info">
-                <img src="/assets/images/reviews-profile/rp3.jpeg" alt="Reviewer 3" class="reviewer-image">
+                <img src="{{ '/assets/images/reviews-profile/rp3.jpeg' | url }}" alt="Reviewer 3" class="reviewer-image">
                 <p class="reviewer-name">Josh Comeau</p>
             </div>
             <div class="review-content">
@@ -81,7 +81,7 @@ mathjax: false
         </div>
         <div class="recommendation-card">
             <div class="reviewer-info">
-                <img src="/assets/images/reviews-profile/rp4.jpeg" alt="Reviewer 4" class="reviewer-image">
+                <img src="{{ '/assets/images/reviews-profile/rp4.jpeg' | url }}" alt="Reviewer 4" class="reviewer-image">
                 <p class="reviewer-name">Maria S.</p>
             </div>
             <div class="review-content">
@@ -90,7 +90,7 @@ mathjax: false
         </div>
         <div class="recommendation-card">
             <div class="reviewer-info">
-                <img src="/assets/images/reviews-profile/rp5.jpeg" alt="Reviewer 5" class="reviewer-image">
+                <img src="{{ '/assets/images/reviews-profile/rp5.jpeg' | url }}" alt="Reviewer 5" class="reviewer-image">
                 <p class="reviewer-name">John D.</p>
             </div>
             <div class="review-content">
@@ -99,7 +99,7 @@ mathjax: false
         </div>
         <div class="recommendation-card">
             <div class="reviewer-info">
-                <img src="/assets/images/reviews-profile/rp6.jpeg" alt="Reviewer 6" class="reviewer-image">
+                <img src="{{ '/assets/images/reviews-profile/rp6.jpeg' | url }}" alt="Reviewer 6" class="reviewer-image">
                 <p class="reviewer-name">Sarah K.</p>
             </div>
             <div class="review-content">

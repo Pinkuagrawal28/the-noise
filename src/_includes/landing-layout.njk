@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title or site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
   <header>
-    <h1><a href="/">{{ site.title }}</a></h1>
+    <h1><a href="{{ '/' | url }}">{{ site.title }}</a></h1>
     <nav>
       <ul>
-        <li><a href="/areas/">Areas</a></li>
-        <li><a href="/changelog/">Changelog</a></li>
-        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="{{ '/areas/' | url }}">Areas</a></li></li>
+        <li><a href="{{ '/changelog/' | url }}">Changelog</a></li>
+        <li><a href="{{ '/faq/' | url }}">FAQ</a></li>
       </ul>
     </nav>
   </header>
