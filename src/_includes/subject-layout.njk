@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  {{ content | safe }}
+
+  {% if references[title] %}
+    <h2>References</h2>
+
+    {% if references[title].textbooks %}
+      <h3>Textbooks</h3>
+      <ul>
+        {% for textbook in references[title].textbooks %}
+          <li><a href="{{ textbook.link }}" target="_blank" rel="noopener noreferrer">{{ textbook.title }}</a> by {{ textbook.author }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if references[title].other %}
+      <h3>Other Links</h3>
+      <ul>
+        {% for link in references[title].other %}
+          <li><a href="{{ link.link }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+{% endblock %}

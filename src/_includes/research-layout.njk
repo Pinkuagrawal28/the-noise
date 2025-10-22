@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+---
+{{ content | safe }}
+
+{% for area, papers in research %}
+  <h2>{{ area }}</h2>
+  <ul>
+    {% for paper in papers %}
+      <li><a href="{{ paper.link }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a> by {{ paper.author }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
