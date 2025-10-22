@@ -8,7 +8,7 @@ layout: temp-layout.njk
 <ul>
 {% for item in collections.subject %}
   {% if item.data.tags and 'subject' in item.data.tags %}
-    <li><a href="{{ item.url }}">{{ item.data.title }}</li>
+    <li><a href="{{ item.url | url }}">{{ item.data.title }}</li>
   {% endif %}
 {% endfor %}
 </ul>
