@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/the-noise/", // For GitHub Pages deployment
     dir: {
       input: "src",
       output: "_site"
