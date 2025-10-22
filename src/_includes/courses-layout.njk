@@ -1,0 +1,13 @@
+---
+layout: layout.njk
+---
+{{ content | safe }}
+
+{% for area, courses_list in courses %}
+  <h2>{{ area }}</h2>
+  <ul>
+    {% for course in courses_list %}
+      <li><a href="{{ course.link }}" target="_blank" rel="noopener noreferrer">{{ course.title }}</a> on {{ course.platform }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
