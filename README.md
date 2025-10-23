@@ -71,6 +71,34 @@ This project is automatically deployed to GitHub Pages using a GitHub Actions wo
 
 To ensure automatic deployment, verify that GitHub Pages is configured to use "GitHub Actions" as its source in your repository settings (`Settings > Pages`).
 
+## How to Contribute
+
+We welcome contributions to "The Noise"! To ensure a smooth and collaborative process, please follow these guidelines when contributing new content or making changes.
+
+### Branch Naming Conventions
+
+To maintain a clear and organized Git history, please use the following branch naming conventions:
+
+-   **Features:** For adding new chapters, sections, or functionality.
+    -   `feat/add-new-chapter-name`
+    -   `feat/implement-search-functionality`
+-   **Fixes:** For correcting errors, typos, or bugs.
+    -   `fix/correct-typo-in-chapter-1`
+    -   `fix/resolve-build-error`
+-   **Documentation:** For changes to the README or other documentation.
+    -   `docs/update-contribution-guidelines`
+
+### Adding New Chapters
+
+To add a new chapter to an existing subject, follow these steps:
+
+1.  **Navigate to the subject directory:** Go to `src/subjects/` and find the relevant subject folder (e.g., `src/subjects/algorithm/`).
+2.  **Create a new Markdown file:** Add a new `.md` file for your chapter. Follow the existing naming convention (e.g., `chapter-6-new-topic.md`).
+3.  **Add content:** Write your chapter content in Markdown format. You can reference existing chapters for formatting and structure.
+4.  **Link the chapter (if necessary):** Depending on the subject's structure, you may need to update an `index.md` or a navigation file to include a link to your new chapter.
+
+By following these guidelines, you help us keep the project organized and make it easier for everyone to contribute.
+
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
